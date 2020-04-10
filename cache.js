@@ -37,7 +37,7 @@ class Cache {
     }
 
     /**
-     * 
+     * Return data by key
      * @param {string} key 
      * @return {any}
      */
@@ -49,7 +49,7 @@ class Cache {
     }
 
     /**
-     * 
+     * Put data in cache
      * @param {string} key 
      * @param {string|object} value 
      * @return {boolean}

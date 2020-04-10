@@ -20,9 +20,9 @@
 class Cipher {
 
     /**
-     * 
-     * @param {*} crypto 
-     * @param {string} salt 
+     * Cipher class is layer module 
+     * @param {*} crypyoModule - Crypto module 
+     * @param {string} salt  - Key salt
      */
     constructor(crypyoModule, salt) {
         this.crypto = crypyoModule;
@@ -31,7 +31,7 @@ class Cipher {
     }
 
     /**
-     * 
+     * Private method for password hashing
      * @param {string} password 
      * @return {string|null}
      */
@@ -45,9 +45,9 @@ class Cipher {
     }
 
     /**
-     * 
-     * @param {string} password 
-     * @return {string}
+     * Private method that creates a key from a password and salt
+     * @param {string} password  - is required
+     * @return {string|null}
      */
     _key(password) {
         try {
@@ -59,9 +59,9 @@ class Cipher {
     }
 
     /**
-     * 
-     * @param {string} password 
-     * @param {string} data 
+     * Method encrypts input data
+     * @param {string} password  - is required
+     * @param {string} data  - is required
      * @return {string|null}
      */
     encrypt(password, data) {
@@ -78,9 +78,9 @@ class Cipher {
     }
 
     /**
-     * 
-     * @param {string} password 
-     * @param {string} data 
+     * Method decrypts input data
+     * @param {string} password - password is required
+     * @param {string} data - data is required
      * @return {string|null}
      */
     decrypt(password, data) {

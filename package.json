@@ -1,7 +1,7 @@
 {
   "name": "iz3-encrypted-leveldb",
   "version": "1.0.0",
-  "description": "Demo iz3node encrypted db plugin",
+  "description": "iZ3node encrypted db plugin",
   "main": "index.js",
   "dependencies": {},
   "homepage": "https://izzz.io",
@@ -9,7 +9,7 @@
   "license": "GPL",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Izzzio/izzzio.git"
+    "url": "https://github.com/Izzzio/iz3-encrypted-leveldb.git"
   },
   "keywords": [
     "blockchain",
